@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- ------------------Start Head Section------------------ -->
+<head>
+   <!-- ------------------Meta Links------------------ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New_Aptech_PROJECT</title>
+  <!-- ------------------Bootstrap Link------------------ -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- ------------------Favicon Icon Link--------------- -->
+  <link rel="shortcut icon" href="images/company_logo.png" type="images">
+  <!-- -----------------Custom css Link----------------- -->
+  <link rel="stylesheet" href="style.css">
+  <!-- -----------------Font Awesome Link--------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ----------------Internal Css Start---------------- -->
+  <style>
+    .cart-page {
+      padding-top: 10%;
+
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #f7444e;
+    }
+
+    .cart-info {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    th {
+      text-align: left;
+      padding: 10px;
+      padding-left: 15px;
+      background-color: #f7444e;
+      color: white;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+
+    td {
+      padding: 10px 5px;
+
+    }
+
+    td input {
+      width: 40px;
+      height: 30px;
+      padding: 5px;
+
+    }
+
+    .cart-info a {
+      font-size: 16px;
+    }
+
+    .cart-info-content {
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+
+    .cart-info-content h3 {
+      color: #f7444e;
+      margin-top: 10px;
+    }
+
+    small {
+      font-size: 16px;
+      margin-left: 15px;
+    }
+
+    td img {
+      width: 150px;
+      height: 150px;
+      margin: 0 10px;
+    }
+
+    .total-price {
+      width: 25%;
+      margin-right: 72px;
+      display: flex;
+      float: right;
+      border: none;
+      border-top: 3px solid #f7444e;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-direction: column;
+
+    }
+
+    .Check-out {
+      width: 100%;
+      height: 50px;
+      font-size: 1.5rem;
+      background-color: #f7444e;
+      color: white;
+      border: none;
+    }
+
+    .Check-out:hover {
+      background-color: #cdcbcc;
+      color: #f7444e;
+      border: 1px solid #f7444e;
+      cursor: pointer;
+      cursor: url("images/link_cursor.png"), auto;
+      }
+
+
+  </style>
+  <!-- -----------------Internal Css End----------------- -->
+</head>
+ <!-- ------------------End Head Section------------------ -->
+
+    <!-- ------------------Start Body Section------------------ -->
+
+<body>
+  <!-- --------------------Start Header section---------------------- -->
+  <header>
+    <a href="index.html"><img src="images/company_logo.png" height="55px" alt="" srcset=""></a>
+    <nav>
+      <div class="nav-link">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clothes.html">Clothes</a></li>
+          <li><a href="watches.html">Watches</a></li>
+          <li><a href="shoes.html">Shoes</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- --------------------End Header section---------------------- -->
+  <!-- --------------------Start Cart Details---------------------- -->
+  <div class="container cart-page">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="clothes_img/kurta-1.webp" width="200px" height="180px" alt="" srcset="">
+            <div class="cart-info-content">
+              <h3>Gemini Fabric Blended Kurta</h3>
+              <small>Price:6,890</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs:6,890</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="T-shirts-img/T-shirt-1.webp" width="200px" height="180px" alt="" srcset="">
+            <div class="cart-info-content">
+              <h3>Smoke Gray T-Shirt</h3>
+              <small>Price:870.00</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs:870.00</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="Watches-img/5205R_011_1.jpg" width="200px" height="180px" alt="" srcset="">
+            <div class="cart-info-content">
+              <h3>Original Lather watch dark brown </h3>
+              <small>Price:45,000</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs:45,000</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images\055d5edb-1496-4803-991e-c5d3dc121b5e.webp" width="200px" height="180px" alt="" srcset="">
+            <div class="cart-info-content">
+              <h3>Gray Shoes M4 62 New Brand</h3>
+              <small>Price:15,580</small>
+              <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>Rs: 15,580</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="total-price">
+    <table>
+      <tr>
+        <td>Sub Total:</td>
+        <td>68,340</td>
+      </tr>
+
+      <tr>
+        <td>Tax:</td>
+        <td>683.04</td>
+      </tr>
+
+      <tr>
+        <td>Total:</td>
+        <td>69023.4</td>
+      </tr>
+    </table>
+    <button class="Check-out">Check Out</button>
+  </div>
+  <!-- ------------------End Cart section------------------ -->
+
+  <!-- ------------------------Start Footer------------------------ -->
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="footer-main container-fluide p-5">
+    <div class="row">
+      <div class="col-lg-3 sm-2 md-3">
+        <h4>&nbsp;<img src="images/company_logo.png" width="200px" alt="" srcset=""></h4>
+        <p><a href="#">Address: Karachi,Pakistan</a></p>
+        <p><a href="#">Phone No:0300-0000000</a></p>
+        <p><a href="#">E-mail:Info1234@gmail.com</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+      <div class="col-lg-3 md-2 sm-1">
+        <h4>&nbsp;FOLLOW US</h4>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">CAREERS</a></p>
+        <p><a href="#">Youtube</a></p>
+        <p><a href="#">TIKTOK</a></p>
+        <p><a href="#">Twitter</a></p>
+      </div>
+      <div class="col-lg-3 sm-1 md-2 p-2">
+        <h4>&nbsp;INFORMATION</h4>
+        <p><a href="#">ABOUT US</a></p>
+        <p><a href="#">CONTACT US</a></p>
+        <p><a href="#">CAREERS</a></p>
+        <p><a href="#">STORE LOCATOR</a></p>
+        <p><a href="#">LIMELIGHT TREND</a></p>
+        <p><a href="#">Blogs</a></p>
+      </div>
+      <div class="col-lg-3 md-2  sm-1">
+        <h4>&nbsp;POLICIES</h4>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Shipping Policy</a></p>
+        <p><a href="#">Ordering & Tracking</a></p>
+        <p><a href="#">STORE LOCATOR</a></p>
+        <p><a href="#">Return & Exchanges</a></p>
+        <p><a href="#">Cookies Policy</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-last container-fluide  text-center">
+    <h5> &copy;Copy Right |All Reserved| company</h5>
+  </div>
+  <!-- ------------------------End Footer------------------------ -->
+
+  <!-- ------------------------Bootstrap Bundle with Popper------------------------ -->
+   <!-- ------------------------Bootstrap java Script link------------------------ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="first.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
